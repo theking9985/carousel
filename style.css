@@ -1,0 +1,37 @@
+h1 {
+	color: green;
+}
+
+ul {  
+	position: relative;
+	left: -210px;
+	list-style-type: none;
+	margin: 0px;  
+	padding: 0px;  
+	width: 9999px;
+	padding-bottom:10px;
+}  
+
+li {  
+	float: left;
+	width: 200px;
+	padding: 0px;  
+	height: 110px;  
+	margin-top: 10px;  
+	margin-bottom: 10px;  
+	margin-left: 5px;  
+	margin-right: 5px;  
+}  
+
+#carousel {  
+	float:left;
+	width: 630px;
+	overflow: hidden;
+	background: gray;
+}  
+  
+#left_arrow, #right_arrow{
+	float: left;  
+	cursor: pointer;  
+	cursor: hand;  
+}
