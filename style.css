@@ -41,19 +41,18 @@ li {
 }
 
 #wrapper {
-	width: 1020px;
+	width: 100%;
 	margin: 0 auto;
-	height: 230px;
 }
 
 #carousel {
-	width: 930px;
+	width: 88%;
 	float: left;
 	overflow: hidden;
 }
   
 #left_arrow, #right_arrow {
-	width: 45px;
+	width: 3%;
 	float: left; 
 	cursor: pointer;
 	cursor: hand;
@@ -61,6 +60,14 @@ li {
 
 #left_arrow img, #right_arrow img {
 	height: 230px;
+}
+
+#left_arrow {
+	margin-left: 3%;
+}
+
+#right_arrow {
+	margin-right: 3%;
 }
 
 @media only screen and (max-width: 1020px) {
