@@ -18,10 +18,10 @@ h1 {
 }
 
 ul {
-	border: 1px solid green;
+/*	border: 1px solid green;*/
 	/*background-color: black;*/
 	position: relative;
-	left: -410px;
+	left: -310px;
 	list-style-type: none;
 	margin: 0px; 
 	padding: 0px;
@@ -30,8 +30,9 @@ ul {
 }
 
 li {
+	background-color: red;
 	float: left;
-	width: 400px;
+	width: 300px;
 	padding: 0px; 
 	height: 200px;
 	margin-top: 10px;
@@ -42,16 +43,16 @@ li {
 
 #carousel {
 	/*border: 1px solid black;*/
-	width: 90%;
+	width: 930px;
 	float: left;
 	/*width: 1230px;*/
 	overflow: hidden;
-	background: gray;
+	/*background: gray;*/
 }
   
 #left_arrow, #right_arrow {
-	width: 5%;
-	border: 1px solid black;
+	width: 45px;
+	/*border: 1px solid black;*/
 	float: left; 
 	cursor: pointer;
 	cursor: hand;
@@ -62,7 +63,7 @@ li {
 }
 
 #wrapper {
-	width: 90%;
+	width: 1020px;
 	/*border: 1px solid red;*/
 	margin: 0 auto;
 	height: 230px;
