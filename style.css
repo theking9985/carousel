@@ -1,37 +1,69 @@
-h1 {
-	color: green;
+* { margin:0; padding:0; box-sizing:border-box; }
+
+.clearfix:after { 
+	content: "."; 
+	visibility: hidden; 
+	display: block; 
+	height: 0; 
+	clear: both;
 }
 
-ul {  
+body {
+	text-align: center;
+}
+
+h1 {
+	color: green;
+	margin-bottom: 30px;
+}
+
+ul {
+	border: 1px solid green;
+	/*background-color: black;*/
 	position: relative;
-	left: -210px;
+	left: -410px;
 	list-style-type: none;
-	margin: 0px;  
-	padding: 0px;  
+	margin: 0px; 
+	padding: 0px;
 	width: 9999px;
-	padding-bottom:10px;
-}  
+	padding-bottom: 10px;
+}
 
-li {  
+li {
 	float: left;
-	width: 200px;
-	padding: 0px;  
-	height: 110px;  
-	margin-top: 10px;  
-	margin-bottom: 10px;  
-	margin-left: 5px;  
-	margin-right: 5px;  
-}  
+	width: 400px;
+	padding: 0px; 
+	height: 200px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
 
-#carousel {  
-	float:left;
-	width: 630px;
+#carousel {
+	/*border: 1px solid black;*/
+	width: 90%;
+	float: left;
+	/*width: 1230px;*/
 	overflow: hidden;
 	background: gray;
-}  
+}
   
-#left_arrow, #right_arrow{
-	float: left;  
-	cursor: pointer;  
-	cursor: hand;  
+#left_arrow, #right_arrow {
+	width: 5%;
+	border: 1px solid black;
+	float: left; 
+	cursor: pointer;
+	cursor: hand;
+}
+
+#left_arrow img, #right_arrow img {
+	height: 220px;
+}
+
+#wrapper {
+	width: 90%;
+	/*border: 1px solid red;*/
+	margin: 0 auto;
+	height: 230px;
 }

@@ -5,7 +5,7 @@ $(document).ready(function() {
         
         $("ul").animate({"left" : leftIndent}, function(){  
             $("li:last").after($("li:first"));   
-            $("ul").css({"left" : "-210px"});  
+            $("ul").css({"left" : "-410px"});
         });
     });  
 
@@ -14,7 +14,7 @@ $(document).ready(function() {
 
         $("ul").animate({"left" : leftIndent}, function(){
 	        $("li:first").before($("li:last"));
-	        $("ul").css({"left" : "-210px"});
+	        $("ul").css({"left" : "-410px"});
         });    
     });  
 });  
