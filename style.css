@@ -24,24 +24,20 @@ ul {
 	position: relative;
 	/*left: -310px;*/
 	list-style-type: none;
-	margin: 0px; 
-	padding: 0px;
-	/*width: 9999px;*/
-	height: 200px;
+	width: 100%;
+	height: 241px;
 	overflow: hidden;
 	/*padding-bottom: 10px;*/
 }
 
 li {
-	/*background-color: red;*/
 	float: left;
 	left: 33.1%;
-	max-width: 500px;
 	width: 33.1%;
-
 	padding: 0px; 
-	/*height: 200px;*/
-	margin: 0 .1% 0 .1%;
+	height: auto;
+	margin: 0 .1% 5% .1%;
+
 }
 
 li:first-child {
@@ -53,8 +49,7 @@ li:last-child {
 }
 
 li img {
-	height: auto;
-	max-width: 100%;
+	width: 25vw;
 }
 
 #wrapper {	
@@ -63,7 +58,6 @@ li img {
 }
 
 #carousel {
-	border: 1px solid red;
 	width: 88%;
 	float: left;
 	overflow: hidden;
@@ -77,7 +71,7 @@ li img {
 }
 
 #left_arrow img, #right_arrow img {
-	height: 200px;
+	height: 241px;
 }
 
 #left_arrow {
