@@ -1,11 +1,13 @@
-$(document).ready(function() {  
+$(document).ready(function() {
+
+	// $("li:first").before($("li:last"));
 
     $("#right_arrow").click(function(){
         var leftIndent = parseInt($("ul").css("left")) - $("li").width();
         
         $("ul").animate({"left" : leftIndent}, function(){  
             $("li:last").after($("li:first"));   
-            $("ul").css({"left" : "-310px"});
+            $("ul").css({"left" : "0px"});
         });
     });  
 
@@ -14,7 +16,7 @@ $(document).ready(function() {
 
         $("ul").animate({"left" : leftIndent}, function(){
 	        $("li:first").before($("li:last"));
-	        $("ul").css({"left" : "-310px"});
+	        $("ul").css({"left" : "0px"});
         });    
     });  
 });  
