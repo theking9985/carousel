@@ -24,8 +24,9 @@ ul {
 	position: relative;
 	/*left: -310px;*/
 	list-style-type: none;
-	width: 100%;
-	height: 241px;
+	/*width: 100%;*/
+	/*height: 270px;*/
+	height: 18vw;
 	overflow: hidden;
 	/*padding-bottom: 10px;*/
 }
@@ -49,7 +50,7 @@ li:last-child {
 }
 
 li img {
-	width: 25vw;
+	width: 28vw;
 }
 
 #wrapper {	
@@ -58,46 +59,45 @@ li img {
 }
 
 #carousel {
-	width: 88%;
+	width: 89vw;
 	float: left;
 	overflow: hidden;
 }
   
 #left_arrow, #right_arrow {
-	width: 3%;
 	float: left; 
 	cursor: pointer;
 	cursor: hand;
 }
 
 #left_arrow img, #right_arrow img {
-	height: 241px;
+	height: 18vw;
 }
 
 #left_arrow {
-	margin-left: 3%;
+	margin-left: 3vw;
 }
 
 #right_arrow {
-	margin-right: 3%;
+	margin-right: 3vw;
 }
 
 @media only screen and (max-width: 1020px) {
 	#carousel {
-		width: 620px;
+		/*width: 620px;*/
 	}
 
 	#wrapper {
-		width: 710px;
+		/*width: 710px;*/
 	}
 }
 
 @media only screen and (max-width: 710px) {
 	#carousel {
-		width: 310px;
+		/*width: 310px;*/
 	}
 
 	#wrapper {
-		width: 400px;
+		/*width: 400px;*/
 	}
 }
