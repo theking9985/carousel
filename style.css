@@ -33,17 +33,17 @@ ul {
 
 li {
 	float: left;
-	left: 33.1%;
-	width: 33.1%;
+	left: 33.2%;
+	width: 33.2%;
 	height: auto;
 }
 
 li:first-child {
-	margin-left: .15%;
+	margin-left: .2%;
 }
 
 li:last-child {
-	margin-right: .15%;
+	margin-right: .2%;
 }
 
 li img {
@@ -58,7 +58,7 @@ li img {
 #carousel {
 	width: 89vw;
 	float: left;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
   
 #left_arrow, #right_arrow {
@@ -80,13 +80,58 @@ li img {
 }
 
 @media only screen and (max-width: 900px) {
+
+	h1 {
+		font-size: 40px;
+	}
+	
+	#wrapper {
+		width: 90%;
+	}
+
+	#carousel {
+		width: 78vw;
+	}
+
+	#left_arrow img, #right_arrow img {
+		height: 22vw;
+	}
+	
+	ul {
+		height: 22vw;
+	}
+
 	li {
-		width: 45%;
+		width: 49.8%;
+	}
+
+	li img {
+		width: 34vw;
 	}
 }
 
 @media only screen and (max-width: 480px) {
+	#wrapper {
+		width: 76%;
+	}
+
+	#carousel {
+		width: 60vw;
+	}
+
+	#left_arrow img, #right_arrow img {
+		height: 40vw;
+	}
+	
+	ul {
+		height: 40vw;
+	}
+
 	li {
-		width: 90%;
+		width: 80%;
+	}
+
+	li img {
+		width: 60vw;
 	}
 }
