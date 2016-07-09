@@ -14,7 +14,7 @@ body {
 
 h1 {
 	color: green;
-	font-size: 60px;
+	font-size: 4vw;
 	margin-bottom: 30px;
 	margin-top: 20px;
 }
@@ -35,10 +35,7 @@ li {
 	float: left;
 	left: 33.1%;
 	width: 33.1%;
-	padding: 0px; 
 	height: auto;
-	margin: 0 .1% 5% .1%;
-
 }
 
 li:first-child {
@@ -82,22 +79,14 @@ li img {
 	margin-right: 3vw;
 }
 
-@media only screen and (max-width: 1020px) {
-	#carousel {
-		/*width: 620px;*/
-	}
-
-	#wrapper {
-		/*width: 710px;*/
+@media only screen and (max-width: 900px) {
+	li {
+		width: 45%;
 	}
 }
 
-@media only screen and (max-width: 710px) {
-	#carousel {
-		/*width: 310px;*/
-	}
-
-	#wrapper {
-		/*width: 400px;*/
+@media only screen and (max-width: 480px) {
+	li {
+		width: 90%;
 	}
 }
