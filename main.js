@@ -22,6 +22,11 @@ $(document).ready(function() {
         });    
     });
 
+    $("a .dots").click(function() {
+    	$(".active").removeClass("active");
+    	$(this).addClass("active");
+    });
+
 
     	// carousel keeps sliding infinite
 
