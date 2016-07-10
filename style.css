@@ -50,9 +50,9 @@ h1 {
 }*/
 
 ul {
-	background-color: #EFEFEF;
+	/*background-color: #EFEFEF;*/
 	position: relative;
-	left: -31.4vw;
+	left: -31.15vw;
 	list-style-type: none;
 	height: 18vw;
 	width: 9999px;
@@ -62,20 +62,21 @@ ul {
 li {
 	float: left;
 	/*left: -33.2%;*/
-	width: 31.2vw;
+	width: 30.9vw;
 	height: auto;
+	margin: 0 0.2vw 0 .2vw;
 }
 
 li:first-child {
-	margin-left: .2vw;
+	margin-left: .25vw;
 }
 
 li:last-child {
-	margin-right: .2vw;
+	margin-right: .25vw;
 }
 
 li img {
-	width: 31.2vw;
+	width: 30.9vw;
 }
 
 @media only screen and (max-width: 900px) {

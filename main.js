@@ -7,7 +7,7 @@ $(document).ready(function() {
 
         $("ul").animate({"left" : leftIndent}, function(){  
             $("li:last").after($("li:first"));   
-            $("ul").css({"left" : "-31.2vw"});
+            $("ul").css({"left" : "-31.15vw"});
         });
     });  
 
@@ -16,7 +16,7 @@ $(document).ready(function() {
 
         $("ul").animate({"left" : leftIndent}, function(){
 	        $("li:first").before($("li:last"));
-	        $("ul").css({"left" : "-31.2vw"});
+	        $("ul").css({"left" : "-31.15vw"});
         });    
     });  
 });  
