@@ -2,43 +2,40 @@ $(document).ready(function() {
 
 	// $("li:first").before($("li:last"));
 
-    function matchImageWithDot(img, dot) {
-    	if ($("li:nth-child(3) img").attr("src") == img) {
-    		$(dot).addClass("active").siblings().removeClass("active");
-    	}
-    };   
+    function matchImageWithDot() {
+		switch ($("li:nth-child(3) img").attr("src")) {
+			case "1.jpeg":
+				$("#dot4").addClass("active").siblings().removeClass("active");
+				break;
+			case "2.jpeg":
+				$("#dot5").addClass("active").siblings().removeClass("active");
+				break;
+			case "3.jpeg":
+				$("#dot1").addClass("active").siblings().removeClass("active");
+				break;
+			case "4.jpeg":
+				$("#dot2").addClass("active").siblings().removeClass("active");
+				break;
+			case "5.jpeg":
+				$("#dot3").addClass("active").siblings().removeClass("active");
+				break;
+		}
+    };
 
-    $("#right_arrow").click(function(){
-        var leftIndent = parseInt($("ul").css("left")) - $("li").outerWidth(true);
+    $(".arrows").click(function() {
+    	var ulLeft = parseInt($("ul").css("left"));
+    	var liWidth = $("li").outerWidth(true);
+    	var arrowId = $(this).attr("id");
 
-        $("ul").animate({"left" : leftIndent}, function(){  
-            $("li:last").after($("li:first"));   
+    	var leftIndent = arrowId == "right_arrow" ? ulLeft - liWidth : ulLeft + liWidth; 
+
+		$("ul").animate({"left" : leftIndent}, function(){              
+			arrowId == "right_arrow" ? $("li:last").after($("li:first")) : $("li:first").before($("li:last"));
             $("ul").css({"left" : "-30vw"});
             
-            matchImageWithDot("1.jpeg", "#dot4");
-            matchImageWithDot("2.jpeg", "#dot5");
-            matchImageWithDot("3.jpeg", "#dot1");
-            matchImageWithDot("4.jpeg", "#dot2");
-            matchImageWithDot("5.jpeg", "#dot3");
-        });
-    });  
-
-    $("#left_arrow").click(function(){  
-        var leftIndent = parseInt($("ul").css("left")) + $("li").outerWidth(true);
-
-        $("ul").animate({"left" : leftIndent}, function(){
-	        $("li:first").before($("li:last"));
-	        $("ul").css({"left" : "-30vw"});
-            
-            matchImageWithDot("1.jpeg", "#dot4");
-            matchImageWithDot("2.jpeg", "#dot5");
-            matchImageWithDot("3.jpeg", "#dot1");
-            matchImageWithDot("4.jpeg", "#dot2");
-            matchImageWithDot("5.jpeg", "#dot3");
-        });
+            matchImageWithDot();
+        });    	
     });
-
-
 
     	// carousel keeps sliding infinite
   //   function checkSize() {
