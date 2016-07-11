@@ -1,7 +1,7 @@
 * { margin:0; padding:0; box-sizing:border-box; }
 
 .clearfix:after { 
-	content: "."; 
+	content: ""; 
 	visibility: hidden; 
 	display: block; 
 	height: 0; 
@@ -22,10 +22,11 @@ h1 {
 #wrapper {
 	width: 100vw;
 	margin: 0 auto;
+	overflow: hidden;
 }
 
 #carousel {
-	width: 90vw;
+	width: 93vw;
 	float: left;
 	overflow: hidden;
 }
@@ -42,16 +43,17 @@ h1 {
 }
 
 #left_arrow {
-	margin-left: 3vw;
+	margin-left: 1.5vw;
 }
 
 #right_arrow {
-	margin-right: 3vw;
+	margin-right: 1.5vw;
 }
 
 ul {
+	/*background-color: #EFEFEF; */
 	position: relative;
-	left: -30vw;
+	left: -31vw;
 	list-style-type: none;
 	height: 18vw;
 	width: 9999px;
@@ -60,14 +62,22 @@ ul {
 
 li {
 	float: left;
-	width: 29.6vw;
+	width: 30.6vw;
 	height: auto;
-	margin: 0 0.2vw 0 .2vw;
+	margin: 0 0.2vw 0 0.2vw;
 }
 
 li img {
-	width: 29.6vw;
+	width: 26.9vw;
 }
+
+/*li:first-child {
+	margin-left: 0.05vw;
+}
+
+li:last-child {
+	margin-right: 0.05vw;
+}*/
 
 .dots {
 	text-align: center;
@@ -76,11 +86,16 @@ li img {
 	background-color: lightgray;
 	border-radius: 10px;
 	display: inline-block;
-	margin: 8px 4px 0 4px;
+	margin: 0 4px 0 4px;
 }
 
 .active {
 	background-color: blue;
+}
+
+#dotDiv {
+	display: inline-block;
+	margin-top: 8px;
 }
 
 @media only screen and (max-width: 1010px) {
@@ -89,39 +104,44 @@ li img {
 		font-size: 40px;
 	}
 	
-	#wrapper {
+/*	#wrapper {
 		width: 90vw;
 	}
 
 	#carousel {
 		width: 80vw;
-	}
+	}*/
 
 	#left_arrow img, #right_arrow img {
 		height: 24vw;
 	}
 	
 	ul {
-		left: -40vw;
+		/*margin-left: 1vw;*/
+		left: -46.5vw;
 		height: 24vw;
 	}
 
 	li {
-		width: 39.6vw;
+		width: 46.1vw;
 	}
 
 	li img {
-		width: 39.6vw;
+		width: 38vw;
 	}
 }
 
 @media only screen and (max-width: 480px) {
 	#wrapper {
-		width: 76%;
+		width: 80vw;
 	}
 
 	#carousel {
-		width: 60vw;
+		width: 73vw;
+	}
+
+	#left_arrow, #right_arrow {
+		margin: 0;
 	}
 
 	#left_arrow img, #right_arrow img {
@@ -129,11 +149,13 @@ li img {
 	}
 	
 	ul {
+		left: -73vw;
 		height: 40vw;
 	}
 
 	li {
-		width: 80%;
+		margin: 0;
+		width: 73vw;
 	}
 
 	li img {

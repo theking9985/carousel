@@ -33,10 +33,24 @@ $(document).ready(function() {
 
 		$("ul").animate({"left" : leftIndent}, function(){              
 			arrowId == "right_arrow" ? $("li:last").after($("li:first")) : $("li:first").before($("li:last"));
-            $("ul").css({"left" : -liWidth});            
+            $("ul").css({"left" : -liWidth});
             matchImageWithDot();
         });    	
     });
+
+  //   $(".arrows").click(function() {
+  //   	var ulLeft = parseInt($("ul").css("left"));
+  //   	var liWidth = $("li").outerWidth(true);
+  //   	var arrowId = $(this).attr("id");
+
+  //   	var leftIndent = arrowId == "right_arrow" ? ulLeft - liWidth : ulLeft + liWidth; 
+
+		// $("ul").animate({"left" : leftIndent}, function(){              
+		// 	arrowId == "right_arrow" ? $("li:last").after($("li:first")) : $("li:first").before($("li:last"));
+  //           $("ul").css({"left" : (-liWidth + "vw")});            
+  //           matchImageWithDot();
+  //       });    	
+  //   });
 
     // move image left or right depend on position of current dot
     function clickDotMoveImg(distance) {
