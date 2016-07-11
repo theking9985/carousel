@@ -71,14 +71,6 @@ li img {
 	width: 26.9vw;
 }
 
-/*li:first-child {
-	margin-left: 0.05vw;
-}
-
-li:last-child {
-	margin-right: 0.05vw;
-}*/
-
 .dots {
 	text-align: center;
 	height: 10px;
@@ -103,21 +95,12 @@ li:last-child {
 	h1 {
 		font-size: 40px;
 	}
-	
-/*	#wrapper {
-		width: 90vw;
-	}
-
-	#carousel {
-		width: 80vw;
-	}*/
 
 	#left_arrow img, #right_arrow img {
 		height: 24vw;
 	}
 	
 	ul {
-		/*margin-left: 1vw;*/
 		left: -46.5vw;
 		height: 24vw;
 	}
