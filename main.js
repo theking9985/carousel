@@ -38,30 +38,33 @@ $(document).ready(function() {
         });    	
     });
 
-    // 
-    function right() {
+    // move image left or right depend on position of current dot
+    function clickDotMoveImg(distance) {
     	var ulLeft = parseInt($("ul").css("left"));
     	var liWidth = $("li").outerWidth(true);
-    	var leftIndent = ulLeft - liWidth;
+    	var leftIndent = distance > 0 ? ulLeft - liWidth : ulLeft + liWidth;
 
 		$("ul").animate({"left" : leftIndent}, function(){              
-			$("li:last").after($("li:first"));
+			distance > 0 ? $("li:last").after($("li:first")) : $("li:first").before($("li:last"));
             $("ul").css({"left" : -liWidth});
             matchImageWithDot();     
         });       	
     };
 
+    // click on dot moves image
     $("a").click(function() {
     	var currentDot = $(".active").index();
     	var clickedDot = $(this).index();
     	var distance = clickedDot - currentDot;
-
-
-
-    	var rightInterval = setInterval(right, 500);
-
-    	setTimeout(function(){clearInterval(rightInterval)}, (distance * 500));
+    	var rightInterval = setInterval(clickDotMoveImg.bind(null, distance), 500);
+    	
+    	if (distance > 0) {
+    		setTimeout(function(){clearInterval(rightInterval)}, (distance * 500));
+    	} else {
+    		setTimeout(function(){clearInterval(rightInterval)}, (-distance * 500));
+    	}
     });  
+
 
 
 
