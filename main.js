@@ -1,25 +1,17 @@
 $(document).ready(function() {
 
+    var imgArray = ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg"];
+    var dotArray = ["#dot5", "#dot1", "#dot2", "#dot3", "#dot4"];
+
 	// dot moves when click on arrow
     function matchImageWithDot() {
-		switch ($("li:nth-child(2) img").attr("src")) {
-			case "1.jpeg":
-				$("#dot5").addClass("active").siblings().removeClass("active");
-				break;
-			case "2.jpeg":
-				$("#dot1").addClass("active").siblings().removeClass("active");
-				break;
-			case "3.jpeg":
-				$("#dot2").addClass("active").siblings().removeClass("active");
-				break;
-			case "4.jpeg":
-				$("#dot3").addClass("active").siblings().removeClass("active");
-				break;
-			case "5.jpeg":
-				$("#dot4").addClass("active").siblings().removeClass("active");
-				break;
-		}
-    };
+	    for (var i = 0; i < imgArray.length; i++) {
+	    	if ($("li:nth-child(2) img").attr("src") == imgArray[i]) {
+	    		$(dotArray[i]).addClass("active").siblings().removeClass("active");
+	    		return;
+	    	}
+	    };
+    }
 
     // click on arrow slides image 
     $(".arrows").click(function() {
