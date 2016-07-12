@@ -1,12 +1,12 @@
 $(document).ready(function() {
 
-    var imgArray = ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg"];
-    var dotArray = ["#dot5", "#dot1", "#dot2", "#dot3", "#dot4"];
+    var imgArray = ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg", "6.jpeg", "7.jpeg"];
+    var dotArray = ["#dot1", "#dot2", "#dot3", "#dot4", "#dot5", "#dot6", "#dot7"];
 
 	// dot moves when click on arrow
     function matchImageWithDot() {
 	    for (var i = 0; i < imgArray.length; i++) {
-	    	if ($("li:nth-child(2) img").attr("src") == imgArray[i]) {
+	    	if ($("li:nth-child(1) img").attr("src") == imgArray[i]) {
 	    		$(dotArray[i]).addClass("active").siblings().removeClass("active");
 	    		return;
 	    	}
@@ -49,9 +49,9 @@ $(document).ready(function() {
     	var rightInterval = setInterval(clickDotMoveImg.bind(null, distance), 500);
     	
     	if (distance > 0) {
-    		setTimeout(function(){clearInterval(rightInterval)}, (distance * 500));
+    		setTimeout(function(){clearInterval(rightInterval)}, ((distance) * 500));
     	} else {
-    		setTimeout(function(){clearInterval(rightInterval)}, (-distance * 500));
+    		setTimeout(function(){clearInterval(rightInterval)}, ((-distance) * 500));
     	}
     });
 });  
